@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KidsRead Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', sans-serif;
+      background-color: #fef6e4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-box {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(126, 112, 112, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    .signup-box h2 {
+      margin-bottom: 1.5rem;
+      color: #ffab40;
+    }
+
+    .signup-box input[type="text"],
+    .signup-box input[type="password"],
+    .signup-box input[type="email"] {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .signup-box button {
+      background-color: #ffab40;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .signup-box button:hover {
+      background-color: #ffa000;
+    }
+
+    .signup-box .home-link {
+      margin-top: 1rem;
+      display: block;
+      font-size: 0.9rem;
+      color: #888;
+      text-decoration: none;
+    }
+
+    .signup-box .home-link:hover {
+      text-decoration: underline;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-box">
+    <h2><i class="fas fa-book-reader"></i> KidsRead</h2>
+    <form action="register.php" method="POST">
+      <input type="text" name="username" placeholder="Preferred username" required /><br />
+      <input type="password" name="password" placeholder="Create a password" required /><br />
+      <input type="password" name="password_confirm" placeholder="Confirm password" required /><br />
+      <input type="email" name="email" placeholder="Email" required /><br />
+      <button type="submit">Sign up</button><br />
+    </form>
+    <a href="myprojectkr.html" class="home-link"><i class="fas fa-home"></i> Back to Home</a><br />
+    <a href="login.html">Already have an account</a>
+  </div>
+
+</body>
+</html>

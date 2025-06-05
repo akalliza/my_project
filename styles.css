@@ -1,0 +1,192 @@
+/* Apply a colorful gradient background */
+body {
+  background: linear-gradient(45deg, #3cdfa8, #df9cb2, #80d3ff, #a395f8);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Layout for the explore section */
+.explore-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section layout */
+.explore-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+
+.icons button {
+  background-color: #ffab40;
+  border: 2px solid #e65100;
+  border-radius: 25px;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.icons button:hover {
+  background-color: #f4511e;
+}
+
+/* Buttons for media options (E-Book, Audiobook, MyStoryAnimated) */
+.media-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.media-btn {
+  background-color: #ffab40;
+  border: 2px solid #e65100;
+  border-radius: 25px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.media-btn:hover {
+  background-color: #f4511e;
+}
+
+/* Explore category buttons */
+.explore-buttons {
+  margin-top: 1.5rem;
+}
+
+.explore-btn {
+  background-color: #ffab40;
+  border: 2px solid #e65100;
+  border-radius: 25px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #f4511e;
+}
+
+/* Right section layout */
+.explore-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.explore-right img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.right-buttons button {
+  background-color: #ffab40;
+  border: 2px solid #e65100;
+  border-radius: 25px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.right-buttons button:hover {
+  background-color: #f4511e;
+}
+
+/* Language options */
+.language-options {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.language-btn {
+  background-color: #ffab40;
+  border: 2px solid #e65100;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.language-btn:hover {
+  background-color: #f4511e;
+}
+
+/* Icons in buttons */
+.right-buttons i, .language-btn i {
+  font-size: 1.2rem;
+}
+
+/* Hover effects */
+button:hover {
+  transform: scale(1.1);
+}

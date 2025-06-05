@@ -1,0 +1,81 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #fff9f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffd966;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav button {
+  background: #f4b400;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0 5px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+main {
+  padding: 1em;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+.book-grid {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.book {
+  background: #ffffff;
+  border: 2px solid #ffd966;
+  border-radius: 10px;
+  padding: 0.5em;
+  text-align: center;
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book img {
+  border-radius: 6px;
+  width: 100px;
+  height: 140px;
+}
+
+#reader button {
+  margin-top: 1em;
+  background: #a2d2ff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
